@@ -1,0 +1,23 @@
+openapi: 3.0.0
+
+info:
+  title: Learn express and swagger
+  description: course segment about writing docs
+  version: 1.1.0
+  contact:
+    email: shalabh@gmail.com
+    url: "shalabh.netlify.com"
+
+servers:
+  - url: "{protocol}://localhost:3000/api/{version}"
+    description: for localhost
+    variables:
+      protocol:
+        enum:
+          - http
+          - https
+      version:
+        enum:
+          - v1
+          - v2
+
